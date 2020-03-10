@@ -1,0 +1,102 @@
+div.donate.two_col { width:964px;height:380px;margin:4px 8px 8px;font-family:inherit; }
+div.donate.two_col div.k_content { height:364px;}
+div.donate.two_col div.formDefLabel {display:none;}
+/*-- COLUMNS --*/
+div.donate.two_col div.k_content div.k_colNum0 { margin-right:20px;width:170px;}
+div.donate.two_col div.k_content  div.k_colNum1 { margin-right:26px;width:300px;}
+div.donate.two_col div.k_content  div.k_colNum2 { position:relative;margin-right:0;width:430px;height:310px;}
+
+/*-- HEADERS --*/
+div.donate.two_col div.k_colNum0 div.k_sectionDonation label.k_donation,
+div.donate.two_col div.k_colNum1 div.k_sectionProfile label.k_profileSection, 
+div.donate.two_col div.k_colNum2 div.k_sectionPayment label.k_payment { margin-top:0; margin-bottom:10px;font-size:18px;}
+
+/*-- VERTICAL SPACING --*/
+div.donate.two_col div.k_questionBlock { margin-bottom:0px;padding:1px 0;}
+div.donate.two_col div.k_addressBlock div.inputGroup { margin-bottom:0px;padding:1px 0;}
+
+/*-- DONATION AMOUNTS --*/
+div.donate.two_col div.k_sectionDonation div.k_donation label.k_radiocb { margin-top:-20px; padding-bottom:6px;font-size:14px; line-height:1; width:5em;}
+div.donate.two_col div.k_sectionDonation div.k_donation span.k_otherMoneyHint { display: none;}
+div.donate.two_col div.k_sectionDonation div.k_donation span.fieldCaption { display:block;}
+
+/*-- CONTACT PROFILE --*/
+div.donate.two_col div.k_sectionProfile div.k_profileSection label.k_text,
+div.donate.two_col div.k_sectionProfile div.k_profileSection label.k_select { max-width:126px;width:126px;font-size:13px;line-height:20px;}
+div.donate.two_col div.k_sectionProfile div.k_profileSection input.k_text,
+div.donate.two_col div.k_sectionProfile div.k_profileSection select.k_select { 
+	margin-left:134px;
+	max-width:154px;
+	width:154px;
+	padding:3px;
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+div.kimbiadiv.two_col span.fieldcaption, 
+div.kimbiadiv.two_col div.inputgroup.k_rbgroup span.fieldcaption.k_number {
+	margin-left:134px;
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+/*-- PAYMENT DETAILS --*/
+div.donate.two_col div.k_sectionPayment div.k_payment label.k_text,
+div.donate.two_col div.k_sectionPayment div.k_payment label.k_select { max-width:154px;width:154px;font-size:13px;line-height:20px;}
+div.donate.two_col div.k_sectionPayment div.k_payment input.k_text,
+div.donate.two_col div.k_sectionPayment div.k_payment select.k_select { 
+	margin-left:162px;
+	max-width:160px;
+	width:160px;
+	padding:3px;
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+div.donate.two_col div.k_sectionPayment div.k_questionBlock div.acknowledge {
+	position:absolute;
+	bottom:8px;
+	width:430px;
+}
+div.donate.two_col div.k_sectionPayment div.k_questionBlock div.acknowledge label.acknowledge { font-size:13px;}
+div.donate.two_col div.k_sectionPayment div.acknowledge textarea.k_textarea { 
+	margin:2px 0;height:100px;
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height: 1.2;
+}
+div.donate.two_col div.k_sectionPayment div.k_questionBlock div.acknowledge label.k_radioCB { padding-bottom:0;}
+/*-- NAVIGATION --*/
+div.donate.two_col span.k_navigationSpan {
+	position:absolute;
+	right:15px;
+	bottom:50px;
+	width:430px;
+}
+div.donate.two_col span.k_navigationSpan table.k_buttonBlock { width:430px;height: auto;}
+div.donate.two_col span.k_navigationSpan table.k_buttonBlock tbody { border:none;}
+div.donate.two_col span.k_navigationSpan table.k_buttonBlock td { width:430px;text-align: right;}
+div.donate.two_col span.k_navigationSpan table.k_buttonBlock td button.k_button.forward { margin-top:0;}
+
+/*-- FOOTER --*/
+div.donate.two_col div.k_footer { margin-top:6px;}
+div.donate.two_col div.k_footer div.k_footerMessage { clear:left;}
+div.donate.two_col div.k_footer div.k_checkmarkBg {
+	float:right;
+	text-align: right;
+	margin: 0 auto;
+	font-style: italic;
+}
+
+/*-- ERROR MESSAGES --*/
+div.donate.two_col div.k_questionBlock div.invalid label.k_text,
+div.donate.two_col div.k_questionBlock div.invalid label.k_select,
+div.donate.two_col div.k_questionBlock div.invalid label.acknowledge { color:#661111;}
+div.donate.two_col div.k_questionBlock div.acknowledge.invalid label.k_radioCB { color:#661111;}
+div.donate.two_col div.k_section div.k_questionBlock span.fieldCaption { display:none;}
+div.donate.two_col div#errDiv_1 {
+	position:absolute;
+	right:10px;
+	bottom:28px;
+	width:430px;
+	color:#991111;
+}
+div.donate.two_col div#errDiv_1 ul { margin:0;padding:0 0 0 24px;color:#991111;}
+div.donate.two_col div#errDiv_1 ul li { font-weight:bold;color:#991111;}

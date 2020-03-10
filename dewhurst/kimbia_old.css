@@ -1,0 +1,72 @@
+div.kimbiaDiv div.k_column {
+	/*width: 30%;*/
+	margin: 0 1em 0 0;
+}
+
+div.kimbiaDiv span.k_otherMoneyHint {
+	display: none;
+}
+
+div.kimbiaDiv div.k_colNum2 {
+	width: 16%;
+	margin: 0 15px 0 0;
+}
+
+div.kimbiaDiv.two_col textarea.acknowledge.k_textarea {
+	font-size: .9em;
+	line-height: 1em;
+}
+
+div.kimbiaDiv div.k_colNum3 {
+	margin: 0;
+	/*width: 18%;*/
+}
+
+div.kimbiaDiv label.groupLabel.section {
+    margin: 0 0 1em 0;
+}
+
+div.kimbiaDiv input.k_radioCB {
+    margin: 2px 0;
+}
+
+div.kimbiaDiv div.inputGroup.k_rbGroup label.k_radioCB, div.kimbiaDiv div.inputGroup label.k_radioCB {
+    padding: 0 0 2px 0;
+}
+
+div.kimbiaDiv span.k_navigationSpan {
+	height: 40px;
+}
+
+div.kimbiaDiv .k_buttonBlock {
+    height: 40px;
+    text-align: right;
+}
+
+div.kimbiaDiv .k_buttonBlock tbody {
+    float: right;
+}
+
+
+div.kimbiaDiv div.k_shareThisFormBlock {
+    margin: 0 auto;
+    position: relative;
+    width: 355px;
+	right: 10px;
+	top: -30px;
+}
+
+div.kimbiaDiv div.k_snippetDoor {
+    width: 355px;
+}
+
+div.kimbiaDiv div.k_footer {
+    margin-top: 0;
+}
+
+div.kimbiaDiv div.k_checkmarkBg {
+	text-align: right;
+	width: 200px;
+	margin: 0 auto;
+	font-style: italic;
+}

@@ -1,0 +1,1030 @@
+/* $Id: style.css,v 1.38.2.4 2009/09/14 13:10:47 goba Exp $ */
+
+/**
+ * Garland, for Drupal 6.x
+ * Stefan Nagtegaal, iStyledThis [dot] nl
+ * Steven Wittens, acko [dot] net`
+ *
+ * If you use a customized color scheme, you must regenerate it after
+ * modifying this file.
+ */
+
+/**
+ * Generic elements
+ */
+body {
+  margin: 0;
+  padding: 0;
+  background: #1f1e27 url('https://www.dewhurstfortexas.com/sites/all/themes/dewhurst/images/bg_content3.jpg') repeat-x 0 0;
+  font: 12px/170% Georgia, "Times New Roman", Times, serif;
+  color: #fff;
+  text-align: center;
+}
+
+input {
+  font: 12px/100% Verdana, sans-serif;
+  color: #494949;
+}
+
+textarea, select {
+  font: 12px/160% Verdana, sans-serif;
+  color: #494949;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1 {
+  font-size: 240%;
+  line-height: 130%;
+}
+
+h2 {
+  font-size: 200%;
+  line-height: 120%;
+  margin: 0 0 7px 0;
+}
+
+h3 {
+  font-size: 140%;
+}
+
+h4 {
+  font-size: 130%;
+}
+
+h5 {
+  font-size: 120%;
+}
+
+h6 {
+  font-size: 110%;
+}
+
+ul, quote, code, fieldset {
+  margin: .5em 0;
+}
+
+p {
+  margin: 0.6em 0 1.2em;
+  padding: 0;
+  font-size:120%;
+}
+
+a:link, a:visited, a:active, a.active {
+  color: #fff;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:active, a.active {
+  /*color: #5895be;*/
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+  border: none;
+  height: 1px;
+  background: #5294c1;
+}
+
+ul {
+  margin: 0.5em 0 1em;
+  padding: 0;
+}
+
+ol {
+  margin: 0.75em 0 1.25em;
+  padding: 0;
+}
+
+ol li, ul li {
+  margin: 0.4em 0 0.4em .5em; /* LTR */
+}
+
+ul.menu, .item-list ul {
+  margin: 0.35em 0 0 -0.5em; /* LTR */
+  padding: 0;
+}
+
+ul.menu ul, .item-list ul ul {
+  margin-left: 0em; /* LTR */
+}
+
+ol li, ul li, ul.menu li, .item-list ul li, li.leaf {
+  margin: 0.15em 0 0.15em .5em; /* LTR */
+}
+
+ul li, ul.menu li, .item-list ul li, li.leaf {
+  padding: 0 0 .2em 1.5em;
+  list-style-type: none;
+  list-style-image: none;
+  background: transparent url(images/menu-leaf.gif) no-repeat 1px .35em; /* LTR */
+}
+
+ol li {
+  padding: 0 0 .3em;
+  margin-left: 2em; /* LTR */
+}
+
+ul li.expanded {
+  background: transparent url(https://www.dewhurstfortexas.com/sites/all/themes/dewhurst/images/menu-expanded.gif) no-repeat 1px .35em; /* LTR */
+}
+
+ul li.collapsed {
+  background: transparent url(https://www.dewhurstfortexas.com/sites/all/themes/dewhurst/images/menu-collapsed.gif) no-repeat 0px .35em; /* LTR */
+}
+
+ul li.leaf a, ul li.expanded a, ul li.collapsed a {
+  display: block;
+}
+
+ul.inline li {
+  background: none;
+  margin: 0;
+  padding: 0 1em 0 0; /* LTR */
+}
+
+ol.task-list {
+  margin-left: 0; /* LTR */
+  list-style-type: none;
+  list-style-image: none;
+}
+ol.task-list li {
+  padding: 0.5em 1em 0.5em 2em; /* LTR */
+}
+ol.task-list li.active {
+  background: transparent url(https://www.dewhurstfortexas.com/sites/all/themes/dewhurst/images/task-list.png) no-repeat 3px 50%; /* LTR */
+}
+ol.task-list li.done {
+  color: #393;
+  background: transparent url(https://www.dewhurstfortexas.com/misc/watchdog-ok.png) no-repeat 0px 50%; /* LTR */
+}
+ol.task-list li.active {
+  margin-right: 1em; /* LTR */
+}
+
+fieldset ul.clear-block li {
+  margin: 0;
+  padding: 0;
+  background-image: none;
+}
+
+dl {
+  margin: 0.5em 0 1em 1.5em; /* LTR */
+}
+
+dl dt {
+}
+
+dl dd {
+  margin: 0 0 .5em 1.5em; /* LTR */
+}
+
+img, a img {
+  border: none;
+}
+
+table {
+  margin: 1em 0;
+  width: 100%;
+}
+
+thead th {
+  border-bottom: 2px solid #d3e7f4;
+  color: #494949;
+  font-weight: bold;
+}
+
+th a:link, th a:visited {
+  color: #6f9dbd;
+}
+
+td, th {
+  padding: .3em .5em;
+}
+
+tr.even, tr.odd, tbody th {
+  border: solid #d3e7f4;
+  border-width: 1px 0;
+}
+
+tr.odd, tr.info {
+  background-color: #edf5fa;
+}
+
+tr.even {
+  background-color: #fff;
+}
+
+tr.drag {
+  background-color: #fffff0;
+}
+
+tr.drag-previous {
+  background-color: #ffd;
+}
+
+tr.odd td.active {
+  background-color: #ddecf5;
+}
+
+tr.even td.active {
+  background-color: #e6f1f7;
+}
+
+td.region, td.module, td.container, td.category {
+  border-top: 1.5em solid #fff;
+  border-bottom: 1px solid #b4d7f0;
+  background-color: #d4e7f3;
+  color: #455067;
+  font-weight: bold;
+}
+
+tr:first-child td.region, tr:first-child td.module, tr:first-child td.container, tr:first-child td.category {
+  border-top-width: 0;
+}
+
+span.form-required {
+  color: #ffae00;
+}
+
+span.submitted, .description {
+  font-size: 0.92em;
+  color: #898989;
+}
+
+.description {
+  line-height: 150%;
+  margin-bottom: 0.75em;
+  color: #898989;
+}
+
+.messages, .preview {
+  margin: .75em 0 .75em;
+  padding: .5em 1em;
+}
+
+.messages ul {
+  margin: 0;
+}
+
+.form-checkboxes, .form-radios, .form-checkboxes .form-item, .form-radios .form-item {
+  margin: 0.25em 0;
+}
+
+#center form {
+  margin-bottom: 2em;
+}
+
+.form-button, .form-submit {
+  margin: 2em 0.5em 1em 0; /* LTR */
+}
+
+#dblog-form-overview .form-submit,
+.confirmation .form-submit,
+.search-form .form-submit,
+.poll .form-submit,
+fieldset .form-button, fieldset .form-submit,
+.sidebar .form-button, .sidebar .form-submit,
+table .form-button, table .form-submit {
+  margin: 0;
+}
+
+.box {
+  margin-bottom: 2.5em;
+}
+
+/**
+ * Layout
+ */
+#wrapper {
+	background: #1f1e27 url('https://www.dewhurstfortexas.com/sites/all/themes/dewhurst/images/bg_content3.jpg') repeat-x 0 0;
+	margin: 0 auto;
+	text-align: left;
+	width: 995px;
+	padding: 0 0 50px 0;
+	position: relative;
+}
+
+/**
+ * Header
+ */
+#header {
+	width: 100%;
+	height: auto;
+	/*height: 52px;
+	display: none;*/
+}
+
+a.hotspot {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	text-indent: -5000px;
+}
+
+/**
+ * Primary navigation
+ */
+ul.primary-links {
+	height: 44px;
+	padding: 0 0 0 11px;
+}
+
+ul.primary-links li {
+	background: transparent none no-repeat 0 0;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+ul.primary-links li a, ul.primary-links li a:link, ul.primary-links li a:visited,
+ul.primary-links li a.active, #more, #less {
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: bold;
+	/*margin: 0 20px 0 0;*/
+	padding: 0;
+	margin: 0;
+	background: transparent url('https://www.dewhurstfortexas.com/sites/all/themes/dewhurst/images/navigation.jpg') no-repeat 0 0;
+	display: block;
+	width: 113px;
+	height: 44px;
+	text-indent: -5000px;
+}
+
+ul.primary-links li.menu-273 a {
+	width: 169px;
+	background-position: -113px 0;
+}
+
+ul.primary-links li.menu-425 a {
+	width: 110px;
+	background-position: -282px 0;
+}
+
+ul.primary-links li.menu-413 a {
+	width: 112px;
+	background-position: -392px 0;
+}
+
+ul.primary-links li.menu-414 a {
+	width: 190px;
+	background-position: -504px 0;
+}
+
+ul.primary-links li.menu-426 a {
+	width: 140px;
+	background-position: -694px 0;
+}
+
+ul.primary-links li.menu-427 a, #more, #less {
+	width: 138px;
+	background-position: -834px 0;
+}
+
+ul.primary-links li.menu-272 a:hover, ul.primary-links li.menu-272 a.active {
+	background-position: 0 -44px;
+}
+
+ul.primary-links li.menu-273 a:hover, ul.primary-links li.menu-273 a.active {
+	background-position: -113px -44px;
+}
+
+ul.primary-links li.menu-425 a:hover, ul.primary-links li.menu-425 a.active {
+	background-position: -282px -44px;
+}
+
+ul.primary-links li.menu-413 a:hover, ul.primary-links li.menu-413 a.active {
+	background-position: -392px -44px;
+}
+
+ul.primary-links li.menu-414 a:hover, ul.primary-links li.menu-414 a.active {
+	background-position: -504px -44px;
+}
+
+ul.primary-links li.menu-426 a:hover, ul.primary-links li.menu-426 a.active {
+	background-position: -694px -44px;
+}
+
+ul.primary-links li.menu-427 a:hover, ul.primary-links li.menu-427 a.active, #less, #more:hover {
+	background-position: -834px -44px;
+}
+
+/* Donate Dropdown */
+
+#donate_dropdown {
+	/*background: #4e4769 url('images/bg_donate.jpg') no-repeat 0 0;*/
+	background: #4e4769 url('https://www.dewhurstfortexas.com/sites/all/themes/dewhurst/images/bg_donate3.jpg') no-repeat 0 0;
+	margin: -4px 0 0 0;
+	padding: 0 7px 7px 7px;
+	line-height: 1em;
+	position: relative;
+	color: black;
+}
+
+#more, #less {
+	display: none;
+	position: absolute;
+	left: 705px;
+	top: 0;
+	z-index: 2000;
+	}
+
+/* END Donate Dropdown */
+
+/**
+ * Secondary navigation
+ */
+ul.secondary-links {
+ 
+}
+
+ul.secondary-links li {
+ 
+}
+
+ul.secondary-links li a, ul.secondary-links li a:link, ul.secondary-links li a:visited {
+  
+}
+
+ul.secondary-links li a:hover, ul.secondary-links li a.active {
+ 
+}
+
+/**
+ * Columns
+ */
+
+#sidebar-right, #center {
+	width: 436px;
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+
+#center {
+	width: 515px;
+	padding: 30px 0;
+}
+
+#sidebar-right {
+	background: transparent url('https://www.dewhurstfortexas.com/sites/all/themes/dewhurst/images/logo_join3.png ') no-repeat 0 0;
+	min-height: 792px;
+	padding: 200px 0 0 0;
+	margin: 0 0 0 35px;
+	position: relative;
+}
+
+#page-homepage #center h2 {
+	display: none;
+}
+
+#page-homepage #center .node h2 {
+	display: block;
+}
+
+/* Webform Block */
+
+#block-views-webform_block-block_1 {
+	color: #444;
+	height: 420px;
+	padding: 0 30px;
+}
+
+#block-views-webform_block-block_1 h2 {
+	display: none;
+}
+
+#block-views-webform_block-block_1 .form-text {
+	border: 2px inset #c3c3c3;
+	padding: 2px;
+}
+
+span.form-required {
+	color: #ab3532;
+}
+
+#block-views-webform_block-block_1 .form-submit {
+	display: block;
+	width: 100px;
+	height: 41px;
+	background: transparent url('https://www.dewhurstfortexas.com/sites/all/themes/dewhurst/images/button_signup.jpg') no-repeat 0 0;
+	border: 0 solid white;
+	text-indent: -5000px;
+}
+
+#block-views-webform_block-block_1 .links {
+	text-align: right;
+}
+/* END Webform Block */
+
+/* Social Icons */
+
+#block-block-3 {
+	text-align: center;
+	/*position: absolute;
+	top: 215px;*/
+	margin: 0 0 135px 0;
+}
+
+#block-block-3 ul {
+	background: transparent url('https://www.dewhurstfortexas.com/sites/all/themes/dewhurst/images/button_social.png') no-repeat 0 0;
+	width: 238px;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
+#block-block-3 li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	background: transparent none no-repeat 0 0;
+}
+
+#block-block-3 li a {
+	display: block;
+	height: 43px;
+	width: 54px;
+	background: transparent url('https://www.dewhurstfortexas.com/sites/all/themes/dewhurst/images/buttons_social2.png') no-repeat 0 0;
+	margin: 0;
+	padding: 0;
+	text-indent: -5000px;
+}
+
+#block-block-3 li#social_twitter a {
+	width: 66px;
+	background-position: -54px 0;
+}
+
+#block-block-3 li#social_youtube a {
+	width: 65px;
+	background-position: -120px 0;
+}
+
+#block-block-3 li#social_flickr a {
+	width: 53px;
+	background-position: -185px 0;
+}
+
+#block-block-3 li#social_fb a:hover {
+	background-position: 0 -43px;
+}
+
+#block-block-3 li#social_twitter a:hover {
+	background-position: -54px -43px;
+}
+
+#block-block-3 li#social_youtube a:hover {
+	background-position: -120px -43px;
+}
+
+#block-block-3 li#social_flickr a:hover {
+	background-position: -185px -43px;
+}
+
+/* END Social Icons */	
+
+/* FB Like Box */
+#block-block-2 {
+	padding: 0;
+	background-color: #fcfcfc;
+	width: 432px;	
+}
+
+/* END FB Like Box */
+/* END Columns */
+
+/* Footer */
+#footer {
+	width: 100%;
+	clear: both;
+	text-align: center;
+	padding:1em;
+	margin:1em;
+	
+}
+#footer p {
+	color:#FFFFFF;
+	font-family:Arial, Helvetica, sans-serif;
+	border:1px solid #FFFFFF;
+	width:350px;
+	text-align:center;
+	padding:1em;
+	margin:1em;
+	}
+/* END Footer */
+
+.addthis {
+	margin: 20px 0;
+	display: block;
+	clear: both;
+}
+
+/** END Layout */
+
+/**
+ * Local tasks
+ */
+ul.primary, ul.primary li, ul.secondary, ul.secondary li {
+  border: 0;
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+#tabs-wrapper {
+  margin: 0 -26px 1em;
+  padding: 0 26px;
+  position: relative;
+}
+ul.primary {
+  padding: 0.5em 0 10px;
+  float: left; /* LTR */
+}
+ul.secondary {
+  clear: both;
+  text-align: left; /* LTR */
+  margin: -0.2em -26px 1em;
+  padding: 0 26px 0.6em;
+}
+h2.with-tabs {
+  float: left; /* LTR */
+  margin: 0 2em 0 0; /* LTR */
+  padding: 0;
+}
+
+/**
+ * Nodes & comments
+ */
+
+
+
+/**
+ * Color.module
+ */
+#palette .form-item {
+  border: 1px solid #fff;
+}
+#palette .item-selected {
+  background: #fff url(https://www.dewhurstfortexas.com/sites/all/themes/dewhurst/images/gradient-inner.png) repeat-x 0 0;
+  border: 1px solid #d9eaf5;
+}
+
+
+/**
+ * Autocomplete.
+ */
+#autocomplete li {
+  cursor: default;
+  padding: 2px;
+  margin: 0;
+}
+
+/**
+ * Collapsible fieldsets
+ */
+fieldset {
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px solid #d9eaf5;
+  background: #fff url(https://www.dewhurstfortexas.com/sites/all/themes/dewhurst/images/gradient-inner.png) repeat-x 0 0;
+}
+
+/* Targets IE 7. Fixes background image in field sets. */
+*:first-child+html fieldset {
+  padding: 0 1em 1em;
+  background-position: 0 .75em;
+  background-color: transparent;
+}
+
+*:first-child+html fieldset > .description, *:first-child+html fieldset .fieldset-wrapper .description {
+  padding-top: 1em;
+}
+
+fieldset legend {
+  /* Fix disappearing legend in FFox */
+  display: block;
+}
+
+*:first-child+html fieldset legend, *:first-child+html fieldset.collapsed legend {
+  display: inline;
+}
+
+html.js fieldset.collapsed {
+  background: transparent;
+  padding-top: 0;
+  padding-bottom: .6em;
+}
+
+html.js fieldset.collapsible legend a {
+  padding-left: 2em; /* LTR */
+  background: url(https://www.dewhurstfortexas.com/sites/all/themes/dewhurst/images/menu-expanded.gif) no-repeat 0% 50%; /* LTR */
+}
+
+html.js fieldset.collapsed legend a {
+  background: url(https://www.dewhurstfortexas.com/sites/all/themes/dewhurst/images/menu-collapsed.gif) no-repeat 0% 50%; /* LTR */
+}
+
+/**
+ * Syndication icons and block
+ */
+#block-node-0 h2 {
+  float: left; /* LTR */
+  padding-right: 20px; /* LTR */
+}
+
+#block-node-0 img, .feed-icon {
+  float: right; /* LTR */
+  padding-top: 4px;
+}
+
+#block-node-0 .content {
+  clear: right; /* LTR */
+}
+
+/**
+ * Login Block
+ */
+#user-login-form {
+  text-align: center;
+}
+#user-login-form ul {
+  text-align: left; /* LTR */
+}
+
+/**
+ * User profiles.
+ */
+.profile {
+  margin-top: 1.5em;
+}
+.profile h3 {
+  border-bottom: 0;
+  margin-bottom: 1em;
+}
+.profile dl {
+  margin: 0;
+}
+.profile dt {
+  font-weight: normal;
+  color: #898989;
+  font-size: 0.92em;
+  line-height: 1.3em;
+  margin-top: 1.4em;
+  margin-bottom: 0.45em;
+}
+.profile dd {
+  margin-bottom: 1.6em;
+}
+
+/**
+ * Admin Styles
+ */
+div.admin-panel,
+div.admin-panel .description,
+div.admin-panel .body,
+div.admin,
+div.admin .left,
+div.admin .right,
+div.admin .expert-link,
+div.item-list,
+.menu {
+  margin: 0;
+  padding: 0;
+}
+
+div.admin .left {
+  float: left; /* LTR */
+  width: 48%;
+}
+div.admin .right {
+  float: right; /* LTR */
+  width: 48%;
+}
+
+div.admin-panel {
+  background: #fff url(https://www.dewhurstfortexas.com/sites/all/themes/dewhurst/images/gradient-inner.png) repeat-x 0 0;
+  padding: 1em 1em 1.5em;
+}
+div.admin-panel .description {
+  margin-bottom: 1.5em;
+}
+div.admin-panel dl {
+  margin: 0;
+}
+div.admin-panel dd {
+  color: #898989;
+  font-size: 0.92em;
+  line-height: 1.3em;
+  margin-top: -.2em;
+  margin-bottom: .65em;
+}
+
+table.system-status-report th {
+  border-color: #d3e7f4;
+}
+
+#autocomplete li.selected, tr.selected td, tr.selected td.active {
+  background: #027ac6;
+  color: #fff;
+}
+
+tr.selected td a:link, tr.selected td a:visited, tr.selected td a:active {
+  color: #d3e7f4;
+}
+
+tr.taxonomy-term-preview {
+  opacity: 0.5;
+}
+
+tr.taxonomy-term-divider-top {
+  border-bottom: none;
+}
+
+tr.taxonomy-term-divider-bottom {
+  border-top: 1px dotted #CCC;
+}
+
+/**
+ * CSS support
+ */
+
+/*******************************************************************
+ * Color Module: Don't touch                                       *
+ *******************************************************************/
+
+/**
+ * Generic elements.
+ */
+.messages {
+  background-color: #fff;
+  border: 1px solid #b8d3e5;
+}
+
+.preview {
+  background-color: #fcfce8;
+  border: 1px solid #e5e58f;
+}
+
+div.status {
+  color: #33a333;
+  border-color: #c7f2c8;
+}
+
+div.error, tr.error {
+  color: #a30000;
+  background-color: #FFCCCC;
+}
+
+.form-item input.error, .form-item textarea.error {
+  border: 1px solid #c52020;
+  color: #363636;
+}
+
+
+/**
+ * Status report colors.
+ */
+table.system-status-report tr.error, table.system-status-report tr.error th {
+  background-color: #fcc;
+  border-color: #ebb;
+  color: #200;
+}
+table.system-status-report tr.warning, table.system-status-report tr.warning th {
+  background-color: #ffd;
+  border-color: #eeb;
+}
+table.system-status-report tr.ok, table.system-status-report tr.ok th {
+  background-color: #dfd;
+  border-color: #beb;
+}
+
+/* Kimbia Form */
+div.donate.two_col { width:964px;height:380px;margin:4px 8px 8px;font-family:inherit; }
+div.donate.two_col div.k_content { height:364px;}
+div.donate.two_col div.formDefLabel {display:none;}
+/*-- COLUMNS --*/
+div.donate.two_col div.k_content div.k_colNum0 { margin-right:20px;width:170px;}
+div.donate.two_col div.k_content  div.k_colNum1 { margin-right:26px;width:300px;}
+div.donate.two_col div.k_content  div.k_colNum2 { position:relative;margin-right:0;width:430px;height:310px;}
+
+/*-- HEADERS --*/
+div.donate.two_col div.k_colNum0 div.k_sectionDonation label.k_donation,
+div.donate.two_col div.k_colNum1 div.k_sectionProfile label.k_profileSection, 
+div.donate.two_col div.k_colNum2 div.k_sectionPayment label.k_payment { margin-top:0; margin-bottom:10px;font-size:18px;text-indent:-5000px;}
+
+/*-- VERTICAL SPACING --*/
+div.donate.two_col div.k_questionBlock { margin-bottom:0px;padding:1px 0;}
+div.donate.two_col div.k_addressBlock div.inputGroup { margin-bottom:0px;padding:1px 0;}
+
+/*-- DONATION AMOUNTS --*/
+div.donate.two_col div.k_sectionDonation div.k_donation label.k_radiocb { margin-top:-20px; padding-bottom:6px;font-size:14px; line-height:1; width:5em;}
+div.donate.two_col div.k_sectionDonation div.k_donation span.k_otherMoneyHint { display: none;}
+div.donate.two_col div.k_sectionDonation div.k_donation span.fieldCaption { display:block;}
+
+/*-- CONTACT PROFILE --*/
+div.donate.two_col div.k_sectionProfile div.k_profileSection label.k_text,
+div.donate.two_col div.k_sectionProfile div.k_profileSection label.k_select { max-width:126px;width:126px;font-size:13px;line-height:20px;}
+div.donate.two_col div.k_sectionProfile div.k_profileSection input.k_text,
+div.donate.two_col div.k_sectionProfile div.k_profileSection select.k_select { 
+	margin-left:134px;
+	max-width:154px;
+	width:154px;
+	padding:3px;
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+div.kimbiadiv.two_col span.fieldcaption, 
+div.kimbiadiv.two_col div.inputgroup.k_rbgroup span.fieldcaption.k_number {
+	margin-left:134px;
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+/*-- PAYMENT DETAILS --*/
+div.donate.two_col div.k_sectionPayment div.k_payment label.k_text,
+div.donate.two_col div.k_sectionPayment div.k_payment label.k_select { max-width:154px;width:154px;font-size:13px;line-height:20px;}
+div.donate.two_col div.k_sectionPayment div.k_payment input.k_text,
+div.donate.two_col div.k_sectionPayment div.k_payment select.k_select { 
+	margin-left:162px;
+	max-width:160px;
+	width:160px;
+	padding:3px;
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+div.donate.two_col div.k_sectionPayment div.k_questionBlock div.acknowledge {
+	position:absolute;
+	bottom:8px;
+	width:430px;
+}
+div.donate.two_col div.k_sectionPayment div.k_questionBlock div.acknowledge label.acknowledge { font-size:13px;}
+div.donate.two_col div.k_sectionPayment div.acknowledge textarea.k_textarea { 
+	margin:2px 0;height:100px;
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height: 1.2;
+}
+div.donate.two_col div.k_sectionPayment div.k_questionBlock div.acknowledge label.k_radioCB { padding-bottom:0;}
+/*-- NAVIGATION --*/
+div.donate.two_col span.k_navigationSpan {
+	position:absolute;
+	right:15px;
+	bottom:42px;
+	width:430px;
+}
+div.donate.two_col span.k_navigationSpan table.k_buttonBlock { width:430px;height: auto;}
+div.donate.two_col span.k_navigationSpan table.k_buttonBlock tbody { border:none;}
+div.donate.two_col span.k_navigationSpan table.k_buttonBlock td { width:430px;text-align: right;}
+div.donate.two_col span.k_navigationSpan table.k_buttonBlock td button.k_button.forward, div.kimbiaDiv button.k_button.forward { margin-top:15px;
+	background: transparent url('https://www.dewhurstfortexas.com/sites/all/themes/dewhurst/images/button_donate.png') no-repeat 0 0;
+	display: block;
+	height: 45px;
+	width: 126px;
+	border: 0 solid white;
+	padding: 0;
+	text-indent: -5000px;
+	float: right;
+}
+
+div.donate.two_col span.k_navigationSpan table.k_buttonBlock td button.k_button.forward:hover, div.kimbiaDiv button.k_button.forward:hover { background-position: 0 -45px;}
+
+/*-- FOOTER --*/
+div.donate.two_col div.k_footer { margin-top:6px;}
+div.donate.two_col div.k_footer div.k_footerMessage { clear:left;display: none;}
+div.donate.two_col div.k_footer div.k_checkmarkBg {
+	float:right;
+	text-align: right;
+	margin: 0 auto;
+	font-style: italic;
+}
+
+/*-- ERROR MESSAGES --*/
+div.donate.two_col div.k_questionBlock div.invalid label.k_text,
+div.donate.two_col div.k_questionBlock div.invalid label.k_select,
+div.donate.two_col div.k_questionBlock div.invalid label.acknowledge { color:#661111;}
+div.donate.two_col div.k_questionBlock div.acknowledge.invalid label.k_radioCB { color:#661111;}
+div.donate.two_col div.k_section div.k_questionBlock span.fieldCaption { display:none;}
+div.donate.two_col div#errDiv_1 {
+	position:absolute;
+	right:10px;
+	bottom:28px;
+	width:430px;
+	color:#991111;
+}
+div.donate.two_col div#errDiv_1 ul { margin:0;padding:0 0 0 24px;color:#991111;}
+div.donate.two_col div#errDiv_1 ul li { font-weight:bold;color:#991111;}
+/* END Kimbia Form */
